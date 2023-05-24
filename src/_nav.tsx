@@ -1,8 +1,19 @@
-import React from 'react'
-import { cilSpeedometer } from '@coreui/icons'
+import React, { ElementType } from 'react'
 import CIcon from '@coreui/icons-react'
-import { CNavItem } from '@coreui/react-pro'
-import { ElementType } from 'react'
+import {
+  cilBell,
+  cilCalculator,
+  cilChartPie,
+  cilCursor,
+  cilDescription,
+  cilDrop,
+  cilNotes,
+  cilPencil,
+  cilPuzzle,
+  cilSpeedometer,
+  cilStar,
+} from '@coreui/icons'
+import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react-pro'
 
 export type Badge = {
   color: string
@@ -28,6 +39,16 @@ const _nav = [
       text: 'NEW',
     },
     to: '/dashboard',
+  },
+  {
+    component: CNavItem,
+    name: 'Login',
+    to: '/login',
+  },
+  {
+    component: CNavItem,
+    name: 'Register',
+    to: '/register',
   },
   {
     component: CNavItem,

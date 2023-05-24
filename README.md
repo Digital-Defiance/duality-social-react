@@ -1,4 +1,8 @@
-# CoreUI PRO React Admin Template v4
+# SoundStorm-react
+SoundStorm is a website for music composers where you can search for sounds and plan out music projects. This is the front-end repository for the project. The back-end is actually Azure Container Apps, which is a containerized version of the back-end.
+
+------
+## CoreUI PRO React Admin Template v4
 
 CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
 

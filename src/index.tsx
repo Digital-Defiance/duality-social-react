@@ -1,17 +1,23 @@
 import React from 'react'
-import { createRoot } from 'react-dom/client'
+import ReactDOM, { createRoot } from 'react-dom/client'
+import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { Provider } from 'react-redux'
 import store from './store'
 
-const container = document.getElementById('root')
+const container = document.getElementById('root') as HTMLElement
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const root = createRoot(container!)
 
 root.render(
   <Provider store={store}>
     <App />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   </Provider>,
 )
 

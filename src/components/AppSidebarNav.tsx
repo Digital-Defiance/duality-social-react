@@ -11,7 +11,11 @@ interface AppSidebarNavProps {
   items: NavItem[]
 }
 
-export const AppSidebarNav: FC<AppSidebarNavProps> = ({ items }) => {
+export const AppSidebarNav: FC<AppSidebarNavProps> = ({
+  items,
+}: {
+  items: any
+}) => {
   const location = useLocation()
   const navLink = (
     name: string | JSX.Element,
@@ -52,13 +56,13 @@ export const AppSidebarNav: FC<AppSidebarNavProps> = ({ items }) => {
     )
   }
   const navGroup = (item: NavItem, index: number) => {
-    const { component, name, icon, to, ...rest } = item
+    const { component, name, icon, badge, to, ...rest } = item
     const Component = component
     return (
       <Component
         idx={String(index)}
         key={index}
-        toggler={navLink(name, icon)}
+        toggler={navLink(name, icon, badge)}
         visible={location.pathname.startsWith(to)}
         {...rest}
       >
